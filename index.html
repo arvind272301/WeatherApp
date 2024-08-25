@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Weather Dashboard</h1>
+            <input type="text" id="city-input" placeholder="Enter city name">
+            <button id="get-weather-btn">Get Weather</button>
+        </header>
+        <main class="main-content">
+            <section class="current-weather">
+                <h2>Current Weather</h2>
+                <div class="weather-info">
+                    <div class="temperature">
+                        <span id="temp-value">--°C</span>
+                        <span id="temp-description">-</span>
+                    </div>
+                    <div class="location">
+                        <span id="city">-</span>, <span id="country">-</span>
+                    </div>
+                </div>
+            </section>
+            <section class="forecast">
+                <h2>5-Day Forecast</h2>
+                <div class="forecast-cards" id="forecast-cards">
+                    <!-- Forecast cards will be generated here -->
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <p>Weather Dashboard &copy; 2024</p>
+        </footer>
+    </div>
+    <script src="javascript.js"></script>
+</body>
+</html>
